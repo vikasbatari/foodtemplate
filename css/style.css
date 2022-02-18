@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Gideon+Roman&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+/* Reset Css */
+
+*{
+    margin: 0px;
+    padding: opx;    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* universal variables */
+:root{
+    --navbar-color:blue
+}
+
+/* navabar css */
+
+#navbar{
+    display: flex;
+    position: sticky;
+    top:0px;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+/* navbar : logo and img */
+#logo{
+margin: 6px 14px;
+}
+
+#logo img{
+   
+    width: 50px;
+
+}
+
+#navbar ul{
+    font-family: 'Baloo 2', cursive;
+    display: flex;
+    margin: 16px 27px;
+}
+
+#navbar ul li{
+   list-style: none;    
+    /* margin: 12px 21px; */
+    font-size: 1.1rem;
+}
+
+#navbar ul li a{
+   text-decoration: none;
+   display: block;
+   padding: 4px 24px;
+   color: white;
+   border-radius: 6px;
+}
+
+#navbar ul li a:hover{
+  color: black;
+  display: block;
+ background-color: white;
+  border-radius: 15px;
+
+ }
+
+
+ /* home section */
+
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 353px;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+ }
+
+ #home::before{
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 360px;
+    z-index: -1;
+    opacity: 0.6;
+    /* margin-top: -25px; */
+}
+
+#home h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+#services{
+    
+    margin: 2px 15px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid #e1c5c5;
+    padding: 8px;
+    margin: 28px;
+    border-radius: 15px;
+    background-color: #efe8e8;
+   
+   
+}
+
+.box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+/* Client section  */
+
+#client-section{
+height: 202px;
+position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg4.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 197px;
+    z-index: -1;
+    opacity: .3;
+    /* margin-top: -25px; */
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-items{
+    padding: 13px;
+}
+
+#clients img{
+   height: 85px;
+}
+
+
+
+/* contactus section */
+
+#contact-section{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* padding-bottom: 34px; */
+height: 447px;
+}
+
+#contact-section::before{
+    content: "";
+    position: absolute;
+    height: 405px;
+    width: 100%;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.4;
+    }
+
+#contactus input, textarea{
+
+    margin: 4px 8px;
+    padding: 8px 8px;
+    width: 450px;
+    border-radius: 10px;
+    border: 2px solid #e1c5c5;
+
+
+}
+
+
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 11px;
+}
+
+/* utlity class */
+
+.h-primary{
+    padding: 12px;
+    font-size: 2.5rem;
+}
+.h-secondary{
+    padding: 12px;
+    font-size: 1.5rem;
+}
+.btn{
+    padding: 5px 16px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 12px 8px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.center{
+    text-align: center;
+}
